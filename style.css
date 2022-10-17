@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    background-color: burlywood;
+    width: 100vw;
+    height: 100vh;
+}
+.element{
+    position: absolute;
+    top: 0%;
+    left: 200px;
+    background-color: #ff0000;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: moving 2s linear 0s 1 alternate;
+    /* transition: all 1s cubic-bezier(.67,1.88,.55,.4); */
+}
+/* .container:hover .element{
+    top: calc(100% - 200px)
+} */
+
+@keyframes moving {
+    0%{
+        top: 0%;
+    }
+    70%{
+        top: 100%;
+    }
+    75%{
+        height: 150px;
+        top: 100%;
+    }
+    85%{
+        top: 85%;
+        height: 200px;
+    }
+    100%{
+        top: 100%;
+    }
+}
